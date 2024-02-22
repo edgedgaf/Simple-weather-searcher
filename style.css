@@ -1,0 +1,208 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1D80C9;
+}
+
+.container{
+    position: relative;
+    width: 500px;
+    height: 105px;
+    background: #fff;
+    padding: 28px 32px;
+    overflow: hidden;
+    border-radius: 18px;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.5s ease-out;
+}
+
+.pesquisa{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pesquisa input{
+    color: #1D80C9;
+    width: 80%;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding-left: 32px;
+
+}
+
+
+.pesquisa input::placeholder{
+    font-size: 20px;
+    font-weight: 500;
+    color: #1D80C9;
+    text-transform: capitalize;
+}
+
+.pesquisa button{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    color: #1D80C9;
+    background: #9BD7F8;
+    border-radius: 50%;
+    font-size: 22px;
+    transition: 0.5s ease;
+}
+
+.pesquisa button:hover{
+    color: #fff;
+    background: #1D80C9;
+
+}
+
+#reset {
+    background-color: #E1F5FE;
+}
+
+#reset:hover {
+    background-color: #A2B7D4;
+}
+
+#reset i {
+    position: relative;
+}
+
+.pesquisa i{
+    position: absolute;
+    color: #1D80C9;
+    font-size: 28px;
+}
+
+.wbox{
+    text-align: center;
+
+}
+
+.wbox img{
+    width: 60%;
+    margin-top: 30px;
+}
+
+.wbox .temperatura{
+    position: relative;
+    color: #1D80C9;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-left: -16px;
+}
+
+.wbox .temperatura span{
+    position: absolute;
+    margin-left: 4px;
+    font-size: 1.5rem;
+
+}
+
+.wbox .descricao{
+    color: #1D80C9;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.detalhes{
+    width: 100%;
+    display: flex;
+
+    justify-content: space-between;
+    margin-top: 30px;
+
+}
+
+.detalhes .humidade, .detalhes .vento{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100px;
+    justify-content: center;
+}
+
+.detalhes .humidade{
+    padding-left: 20px;
+   /* justify-content: flex-end;*/
+    
+}
+
+.detalhes .vento{
+    padding-left: 20px;
+    /*justify-content: flex-end;*/
+    
+}
+
+.detalhes i{
+    color: #1D80C9;
+    font-size: 26px;
+    margin-right: 10px;
+    margin-top: 6px;
+}
+
+.detalhes span{
+    color: #1D80C9;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.detalhes p{
+    color: #1D80C9;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.erro{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    scale: 0;
+    opacity: 0;
+    display: none;
+
+}
+
+.erro img{
+    width: 70%;
+
+}
+
+.erro p{
+    color: #1D80C9;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 12px;
+
+}
+
+.wbox, .detalhes{
+    scale: 0;
+    opacity: 0;
+
+}
+
+.fadeIn{
+    animation: 0.5 fadeIn forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn{
+    to{
+        scale: 1;
+        opacity: 1;
+    }
+}

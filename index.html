@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Clima</title>
+</head>
+<body>
+        <div class="container">
+                <div class="pesquisa">
+                 <i class="fa-solid fa-location-dot"></i>
+                    <input type="text" placeholder="Insira uma localização." id="loc">
+                    <button type="reset" id="reset" onclick="reset()"><i class="fa-sharp fa-regular fa-x" ></i></button>
+                    <button class="fa-solid fa-magnifying-glass" id="search" onclick="search()"></button>
+             </div>
+        
+            <div class="erro">
+                <img src="imagens/erro.png">
+                <p>Local não encontrado! Favor estudar geografia</p>
+            </div>
+            <div class="wbox">
+                <img src="">
+                <p class="temperatura"></p>
+                <p class="descricao"></p>
+            
+                <div class="detalhes">
+                <div class="humidade">
+                    <i class="fa-solid fa-water"></i>
+                    <div class="texto">
+                        <span></span>
+                        <p>Humidade</p>
+                    </div>
+                </div>
+                <div class="vento">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="texto">
+                        <span></span>
+                        <p>Vento</p>
+                    </div>
+                </div>
+            </div>    
+            </div>
+        </div>    
+    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
